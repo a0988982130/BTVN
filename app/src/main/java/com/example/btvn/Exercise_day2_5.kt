@@ -23,8 +23,16 @@ fun main(args: Array<String>) {
     if ((a?.toFloat() ?: 0f).equals(0)) {
         if ((b?.toFloat()?:0f).equals(0))
         {
-            s += " no solutions"
-            println(s)
+           if ((c?.toFloat()?:0f).equals(0))
+           {
+               s += " infinitely many solutions."
+               println(s)
+           }
+            else
+           {
+               s += " no solutions"
+               println(s)
+           }
         }
         else
         {
